@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Nombre de la App</title>
+        <title>Cover Parking</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/themes/app.min.css">
         <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css">
@@ -12,22 +12,29 @@
         <script src="cordova.js"></script>
     </head>
     <body>
-        <div data-role="page" id="primera">
-
-            <div data-role="header">
-                <h1>Título de la página</h1>
-            </div><!-- /header -->
-
+        <div data-role="page" id="Principal">
             <div role="main" class="ui-content">
-                <p>Contenido de la página</p>
+              
+             <a href="#Iniciar sesión" class="ui-btn ui-corner-all">INICIAR SESIÓN</a>
+             <a href="#Registro" class="ui-btn ui-corner-all">REGISTRO</a>
+              
             </div><!-- /content -->
-
-            <div data-role="footer" data-position="fixed">
-                <h4>Footer de la página.</h4>
-            </div><!-- /footer -->
         </div><!-- /page -->
         
-        <div data-role="page" id="segunda">
+        <div data-role="page" id="Iniciar sesión">
+            <div role="main" class="ui-content">
+              
+                <label for="Correo">Correo:</label>
+                <input type="text" name="Correo" id="Correo" value="" data-mini="true">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="text" name="textinput-6" id="Contraseña" placeholder="" value="" data-mini="true">
+                <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
+                <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
+              
+            </div><!-- /content -->
+        </div><!-- /page -->
+      
+      <div data-role="page" id="Registro">
 
             <div data-role="header">
                 <h1>Título de la página</h1>
