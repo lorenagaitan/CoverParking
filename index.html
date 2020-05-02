@@ -30,23 +30,66 @@
                 <input type="text" name="textinput-6" id="Contraseña" placeholder="" value="" data-mini="true">
                 <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
                 <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
+                <a href="#Inicio" class="ui-btn ui-corner-all">INICIAR SESIÓN</a>
               
             </div><!-- /content -->
         </div><!-- /page -->
       
       <div data-role="page" id="Registro">
-
-            <div data-role="header">
-                <h1>Título de la página</h1>
-            </div><!-- /header -->
-
-            <div role="main" class="ui-content">
-                <p>Contenido de la página.</p>
-            </div><!-- /content -->
-
-            <div data-role="footer">
-                <h4>Footer de la página.</h4>
-            </div><!-- /footer -->
-        </div><!-- /page -->
+          <div role="main" class="ui-content">
+               
+                <label for="Correo">Correo:</label>
+                <input type="text" name="Correo" id="Correo de registro" value="" data-mini="true">
+                <label for="Contraseña">Contraseña:</label>
+                <input type="text" name="Contraseña" id="Contraseña de registro" placeholder="" value="" data-mini="true">
+                <label for="date">Fecha de nacimiento:</label>
+                <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" value="">
+                <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
+                <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
+                <a href="#Inicio" class="ui-btn ui-corner-all">REGISTRO</a>
+            
+          </div><!-- /content -->
+      </div><!-- /page -->
+      
+      <div data-role="page" id="Inicio">
+        <div role="main" class="ui-content">
+          
+          <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+          <label for="search-5"></label>
+          <input type="search" name="search-5" id="search-5" placeholder="¿A donde vas?" value="" data-mini="true">
+          
+        </div><!-- /content -->
+      </div><!-- /page -->
+      
+      <div data-role="page" id="Información">
+        <div role="main" class="ui-content">
+            <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
+           
+            <p align="center"> 
+              <b>Santa Ana</b><br/>
+              <b>5:00 a.m - 10:00 p.m</b><br/>
+            </p>
+             
+          <h3>Comentarios</h3>
+            <div class="ui-body ui-body-a ui-corner-all">
+               <p> 
+                 <b>Usuario</b><br/>
+                 Comentario<br/>
+                 <br><b>Usuario</b><br/>
+                 Comentario
+              </p>
+            </div>
+      
+          <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
+             <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline">Delete</a><br/>
+             <a href="#Información de contacto" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-inline">Plus</a>
+          </div>
+          
+          <a href="#" class="ui-btn ui-corner-all">RESERVAR</a>
+          
+        </div><!-- /content -->
+      </div><!-- /page -->
+    
+      
     </body>
 </html>
