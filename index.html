@@ -1,206 +1,390 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>Cover Parking</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/themes/app.min.css">
-        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css">
-        <link rel="stylesheet" href="css/jquery.mobile.structure.min.css">
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery.mobile.min.js"></script>
-        <script src="cordova.js"></script>
-    </head>
-    <body>
-        <div data-role="page" id="Principal">
-            <div role="main" class="ui-content">
-              
-             <a href="#Iniciar sesión" class="ui-btn ui-corner-all">INICIAR SESIÓN</a>
-             <a href="#Registro" class="ui-btn ui-corner-all">REGISTRO</a>
-              
-            </div><!-- /content -->
-        </div><!-- /page -->
-        
-        <div data-role="page" id="Iniciar sesión">
-            <div role="main" class="ui-content">
-              
-                <label for="Correo">Correo:</label>
-                <input type="text" name="Correo" id="Correo" value="" data-mini="true">
-                <label for="Contraseña">Contraseña:</label>
-                <input type="text" name="textinput-6" id="Contraseña" placeholder="" value="" data-mini="true">
-                <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
-                <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
-                <a href="#Inicio" class="ui-btn ui-corner-all">INICIAR SESIÓN</a>
-              
-            </div><!-- /content -->
-        </div><!-- /page -->
-      
-      <div data-role="page" id="Registro">
-          <div role="main" class="ui-content">
-               
-                <label for="Correo">Correo:</label>
-                <input type="text" name="Correo" id="Correo de registro" value="" data-mini="true">
-                <label for="Contraseña">Contraseña:</label>
-                <input type="text" name="Contraseña" id="Contraseña de registro" placeholder="" value="" data-mini="true">
-                <label for="date">Fecha de nacimiento:</label>
-                <input type="date" name="Fecha de nacimiento" id="Fecha de nacimiento" value="">
-                <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
-                <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
-                <a href="#Inicio" class="ui-btn ui-corner-all">REGISTRO</a>
-            
-          </div><!-- /content -->
-      </div><!-- /page -->
-      
-      <div data-role="page" id="Inicio">
-        <div role="main" class="ui-content">
-          
-          <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-          <label for="search-5"></label>
-          <input type="search" name="search-5" id="search-5" placeholder="¿A donde vas?" value="" data-mini="true">
-          
-         </div><!-- /content -->
-       </div><!-- /page -->
-      
-      <div data-role="page" id="Información">
-        <div role="main" class="ui-content">
-            <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-            <a href="#Inicio" class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
-          
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-            <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-            <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cover Parking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/themes/app.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.structure.min.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+    <script src="cordova.js"></script>
+  </head>
+  <body>
+    <div data-role="page" id="principal">
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/300" />
         </div>
-          
-            <p align="center"> 
-              <b>Santa Ana</b><br/>
-              <b>5:00 a.m - 10:00 p.m</b><br/>
-            </p><br/>
-             
-          <label for="Comentarios"><b>Comentarios:</b></label>
-            <div class="ui-body ui-body-a ui-corner-all">
-               <p> 
-                 <b>Usuario</b><br/>
-                 Comentario<br/>
-                 <br><b>Usuario</b><br/>
-                 Comentario
-              </p>
-            </div>
-      
-          <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
-             <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-grid ui-btn-icon-notext ui-btn-inline">Grid</a><br/>
-             <a href="#Información de contacto" class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a>
+        <a href="#iniciar-sesion" class="ui-btn ui-corner-all"
+          >INICIAR SESIÓN</a
+        >
+        <a href="#registro" class="ui-btn ui-corner-all">REGISTRO</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="iniciar-sesion">
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/300" />
+        </div>
+        <label for="correo">Correo:</label>
+        <input
+          type="text"
+          name="correo"
+          id="correo"
+          value=""
+          data-mini="true"
+        />
+        <label for="contraseña">Contraseña:</label>
+        <input
+          type="text"
+          name="textinput-6"
+          id="contraseña"
+          placeholder=""
+          value=""
+          data-mini="true"
+        />
+        <a href="#inicio" class="ui-btn ui-corner-all">INICIAR SESIÓN</a>
+        <br />
+        <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
+        <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="registro">
+      <div align="center">
+        <img src="https://via.placeholder.com/150" />
+      </div>
+      <div role="main" class="ui-content">
+        <label for="correo">Correo:</label>
+        <input
+          type="text"
+          name="correo"
+          id="correo-de-registro"
+          value=""
+          data-mini="true"
+        />
+        <label for="Contraseña">contraseña:</label>
+        <input
+          type="text"
+          name="Contraseña"
+          id="Contraseña de registro"
+          placeholder=""
+          value=""
+          data-mini="true"
+        />
+        <label for="date">Fecha de nacimiento:</label>
+        <input
+          type="date"
+          name="Fecha de nacimiento"
+          id="Fecha de nacimiento"
+          value=""
+        />
+        <a href="#inicio" class="ui-btn ui-corner-all">REGISTRO</a>
+        <br />
+        <a href="#" class="ui-btn ui-corner-all">Entrar con Facebook</a>
+        <a href="#" class="ui-btn ui-corner-all">Entrar con Google</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="inicio">
+      <div data-role="header" data-position="fixed">
+        <div class="ui-grid-b">
+          <div align="left" class="ui-block-a">
+            <img src="https://via.placeholder.com/40" />
           </div>
-          
-          <a href="#Reserva" class="ui-btn ui-corner-all">RESERVAR</a>
-          
-        </div><!-- /content -->
-      </div><!-- /page -->
-      
-      <div data-role="page" id="Galeria">
-        <div role="main" class="ui-content">
-          
-            <a href="#" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-            
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-            <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-            <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+          <div class="ui-block-b">
+            <input
+              type="search"
+              name="search-5"
+              id="search-5"
+              placeholder="¿A donde vas?"
+              data-mini="true"
+            />
+          </div>
+          <div class="ui-block-c">
+            <a
+              href="#"
+              class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-bars ui-btn-icon-notext"
+              >Options</a
+            >
+          </div>
         </div>
-          
-            <p align="center"> 
-              <b>Santa Ana</b><br/>
-              <b>5:00 a.m - 10:00 p.m</b><br/>
-            </p><br/>
-          
-          <label for="Galeria"><b>Galeria:</b></label>  
-            <div class="ui-body ui-body-a ui-corner-all">
-              <img src="descargas/parqueadero.jpg"/>
-            </div>
-          
-          <a href="#Información" class="ui-btn ui-corner-all">VOLVER</a>
-          <a href="#Inicio" class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
-          
-        </div><!-- /content -->
-      </div><!-- /page -->
-      
-      <div data-role="page" id="Información de contacto">
-        <div role="main" class="ui-content">
-            
-          <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-          <a href="#Inicio" class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
-          
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-            <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-            <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+      </div>
+
+      <div role="main" class="ui-content">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.495052648595!2d-74.07401603022463!3d4.616599050000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1589204483290!5m2!1ses!2sco"
+          width="100%"
+          height="500"
+          frameborder="0"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <a
+          href="#informacion"
+          class="ui-btn ui-icon-location ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="informacion">
+      <div data-role="header" data-position="fixed">
+        <div align="left" class="ui-block-a">
+          <a href="#inicio">
+            <img src="https://via.placeholder.com/50" />
+          </a>
         </div>
-          
-            <p align="center"> 
-              <b>Santa Ana</b><br/>
-              <b>5:00 a.m - 10:00 p.m</b><br/>
-            </p><br/>
-             
-          <label for="Información de contacto"><b>Información de contacto:</b></label>
-            <div align="center" class="ui-body ui-body-a ui-corner-all">
-               <p> 
-                 <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
-                    <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline">User</a><br/>
-                      <b>Representante</b><br/>
-                         Mario Casas<br/>
-                 </div><br/>
-                 
-              <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
-                    <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline">Location</a><br/>
-                      <b>Dirección</b><br/>
-                 Tv 67 N 76 - 23<br/>
-                 </div><br/>
-                 
-              <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
-                    <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline">Phone</a><br/>
-                      <b>Teléfono</b><br/>
-                 6592354 - 3154632529<br/>
-                 </div><br/>
-                 
-              <div class="ui-nodisc-icon ui-alt-icon"><!-- Classes added to the wrapper -->
-                    <a href="#Galeria" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline">Mail</a><br/>
-                      <b>Correo</b><br/>
-                 Santana@gmail.com<br/>
-                 </div>
-               </p>
-            </div>
-          
-          <a href="#Información" class="ui-btn ui-corner-all">VOLVER</a>
-        
-        </div><!-- /content -->
-      </div><!-- /page -->
-      
-  <div data-role="page" id="Reserva">
-        <div role="main" class="ui-content">
-            <a href="#Información" class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all">No text</a>
-            <a href="#Inicio" class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all">Home</a>
-          
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-            <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-            <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+        <div class="ui-nodisc-icon ui-alt-icon">
+          <a
+            href="#menu"
+            class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+            >Phone</a
+          >
         </div>
-          
-            <p align="center"> 
-              <b>Santa Ana</b><br/>
-              <b>5:00 a.m - 10:00 p.m</b><br/>
-            </p><br/>
-             
+      </div>
+      <!-- /header -->
+      <br />
+
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/150" width="70%" height="200" />
+        </div>
+      </div>
+
+      <p align="center">
+        <b>Santa Ana</b><br />
+        <b>5:00 a.m - 10:00 p.m</b><br />
+      </p>
+      <br />
+      <label for="Comentarios"><b>Comentarios:</b></label>
+
+      <div class="ui-grid-a">
+        <div class="ui-block-a">
+          <div class="ui-bar ui-bar-a" style="height:200px">
+            <ul data-role="listview" data-inset="true">
+              <li>
+                <img src="https://via.placeholder.com/50" />
+                <h2>Usuario</h2>
+                <p>Comentario</p>
+              </li>
+              <li>
+                <img src="https://via.placeholder.com/50" />
+                <h2>Usuario</h2>
+                <p>Comentario</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div align="center" class="ui-block-b">
+          <div class="ui-bar ui-bar-a" style="height:200px">
+            <a
+              href="#galeria"
+              style="width:100px"
+              class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-top"
+              >Galeria</a
+            >
+            <a
+              href="#información-de-contacto"
+              style="width:100px"
+              class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-top"
+              >Información <br />de contacto</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- /grid-a -->
+
+      <a href="#Reserva" class="ui-btn ui-corner-all">RESERVAR</a>
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="galeria">
+      <div data-role="header" data-position="fixed">
+        <div align="left" class="ui-block-a">
+          <a href="#inicio">
+            <img src="https://via.placeholder.com/50" />
+          </a>
+        </div>
+        <div class="ui-nodisc-icon ui-alt-icon">
+          <a
+            href="#menu"
+            class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+            >Phone</a
+          >
+        </div>
+      </div>
+      <!-- /header -->
+      <br />
+
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/150" width="70%" height="200" />
+        </div>
+      </div>
+
+      <p align="center">
+        <b>Santa Ana</b><br />
+        <b>5:00 a.m - 10:00 p.m</b><br />
+      </p>
+      <br />
+      <div align="center">
+        <label for="Galeria"><b> Galeria:</b></label>
+        <img src="https://via.placeholder.com/150" width="50%" height="150" />
+
+        <a href="#informacion" class="ui-btn ui-corner-all">VOLVER</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="información-de-contacto">
+      <div role="main" class="ui-content">
+        <a
+          href="#informacion"
+          class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <a
+          href="#Inicio"
+          class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+          >Home</a
+        >
+
+        <div align="center" data-role="controlgroup" data-type="horizontal">
+          <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
+          <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+        </div>
+
+        <p align="center">
+          <b>Santa Ana</b><br />
+          <b>5:00 a.m - 10:00 p.m</b><br />
+        </p>
+        <br />
+
+        <label for="Información de contacto"
+          ><b>Información de contacto:</b></label
+        >
+        <div align="center" class="ui-body ui-body-a ui-corner-all">
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <!-- Classes added to the wrapper -->
+            <a
+              href="#Galeria"
+              class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"
+              >User</a
+            ><br />
+            <b>Representante</b><br />
+            Mario Casas<br />
+          </div>
+          <br />
+
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <!-- Classes added to the wrapper -->
+            <a
+              href="#Galeria"
+              class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"
+              >Location</a
+            ><br />
+            <b>Dirección</b><br />
+            Tv 67 N 76 - 23<br />
+          </div>
+          <br />
+
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <!-- Classes added to the wrapper -->
+            <a
+              href="#Galeria"
+              class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"
+              >Phone</a
+            ><br />
+            <b>Teléfono</b><br />
+            6592354 - 3154632529<br />
+          </div>
+          <br />
+
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <!-- Classes added to the wrapper -->
+            <a
+              href="#Galeria"
+              class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"
+              >Mail</a
+            ><br />
+            <b>Correo</b><br />
+            Santana@gmail.com<br />
+          </div>
+        </div>
+
+        <a href="#informacion" class="ui-btn ui-corner-all">VOLVER</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="Reserva">
+      <div role="main" class="ui-content">
+        <a
+          href="#Información"
+          class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <a
+          href="#Inicio"
+          class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+          >Home</a
+        >
+
+        <div align="center" data-role="controlgroup" data-type="horizontal">
+          <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
+          <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+        </div>
+
+        <p align="center">
+          <b>Santa Ana</b><br />
+          <b>5:00 a.m - 10:00 p.m</b><br />
+        </p>
+        <br />
+
         <form>
-            <label for="date-2"><b>Fecha:</b></label>
-            <hr><input type="date" data-clear-btn="true" name="date-2" id="date-2" value=""><hr/>
+          <label for="date-2"><b>Fecha:</b></label>
+          <hr />
+          <input
+            type="date"
+            data-clear-btn="true"
+            name="date-2"
+            id="date-2"
+            value=""
+          />
+          <hr />
         </form>
-          
+
         <form>
-            <label for="time-2"><b>Hora:</b></label>
-            <input type="time" data-clear-btn="true" name="time-2" id="time-2" value="">
+          <label for="time-2"><b>Hora:</b></label>
+          <input
+            type="time"
+            data-clear-btn="true"
+            name="time-2"
+            id="time-2"
+            value=""
+          />
         </form>
-          <a href="#transitionExample" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup">Slide up</a>
-          <a href="#" class="ui-btn ui-corner-all">CONFIRMAR</a>
-          
-        </div><!-- /content -->
-      </div><!-- /page -->
-  
-    </body>
+
+        <a href="#" class="ui-btn ui-corner-all">CONFIRMAR</a>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+  </body>
 </html>
