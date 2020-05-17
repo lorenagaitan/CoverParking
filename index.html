@@ -29,7 +29,7 @@
     <div data-role="page" id="iniciar-sesion">
       <div role="main" class="ui-content">
         <div align="center">
-          <img src="https://via.placeholder.com/300" />
+          <img src="https://via.placeholder.com/200" />
         </div>
         <label for="correo">Correo:</label>
         <input
@@ -58,8 +58,9 @@
     <!-- /page -->
 
     <div data-role="page" id="registro">
+      <br />
       <div align="center">
-        <img src="https://via.placeholder.com/150" />
+        <img src="https://via.placeholder.com/200" />
       </div>
       <div role="main" class="ui-content">
         <label for="correo">Correo:</label>
@@ -99,7 +100,7 @@
       <div data-role="header" data-position="fixed">
         <div class="ui-grid-b">
           <div align="left" class="ui-block-a">
-            <img src="https://via.placeholder.com/40" />
+            <img src="https://via.placeholder.com/50" />
           </div>
           <div class="ui-block-b">
             <input
@@ -112,10 +113,9 @@
           </div>
           <div class="ui-block-c">
             <a
-              href="#"
+              href="menu"
               class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-bars ui-btn-icon-notext"
-              >Options</a
-            >
+            ></a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.495052648595!2d-74.07401603022463!3d4.616599050000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1589204483290!5m2!1ses!2sco"
           width="100%"
-          height="500"
+          height="400"
           frameborder="0"
           style="border:0;"
           allowfullscreen=""
@@ -142,6 +142,16 @@
     <!-- /page -->
 
     <div data-role="page" id="informacion">
+      <div
+        data-role="panel"
+        id="menu"
+        data-display="overlay"
+        data-position="right"
+      >
+        menu
+      </div>
+      <!-- /panel -->
+
       <div data-role="header" data-position="fixed">
         <div align="left" class="ui-block-a">
           <a href="#inicio">
@@ -152,8 +162,7 @@
           <a
             href="#menu"
             class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
-            >Phone</a
-          >
+          ></a>
         </div>
       </div>
       <!-- /header -->
@@ -173,24 +182,39 @@
       <label for="Comentarios"><b>Comentarios:</b></label>
 
       <div class="ui-grid-a">
-        <div class="ui-block-a">
-          <div class="ui-bar ui-bar-a" style="height:200px">
-            <ul data-role="listview" data-inset="true">
-              <li>
-                <img src="https://via.placeholder.com/50" />
-                <h2>Usuario</h2>
-                <p>Comentario</p>
-              </li>
-              <li>
-                <img src="https://via.placeholder.com/50" />
-                <h2>Usuario</h2>
-                <p>Comentario</p>
-              </li>
-            </ul>
-          </div>
+        <div class="ui-block-a" style="height:300px">
+          <ul data-role="listview" data-inset="true">
+            <li>
+              <img
+                src="https://via.placeholder.com/50"
+                alt="France"
+                class="ui-li-icon ui-corner-none"
+              />
+              <h1>Usuario</h1>
+              <p>Comentario</p>
+            </li>
+            <li>
+              <img
+                src="https://via.placeholder.com/50"
+                alt="France"
+                class="ui-li-icon ui-corner-none"
+              />
+              <h1>Usuario</h1>
+              <p>Comentario</p>
+            </li>
+            <li>
+              <img
+                src="https://via.placeholder.com/50"
+                alt="France"
+                class="ui-li-icon ui-corner-none"
+              />
+              <h1>Usuario</h1>
+              <p>Comentario</p>
+            </li>
+          </ul>
         </div>
-        <div align="center" class="ui-block-b">
-          <div class="ui-bar ui-bar-a" style="height:200px">
+        <div align="center" class="ui-block-b" style="height:300px">
+          <div class="ui-bar ui-bar-a">
             <a
               href="#galeria"
               style="width:100px"
@@ -206,7 +230,7 @@
           </div>
         </div>
       </div>
-      <!-- /grid-a -->
+      <!-- /grid-b -->
 
       <a href="#Reserva" class="ui-btn ui-corner-all">RESERVAR</a>
     </div>
@@ -243,7 +267,16 @@
       <br />
       <div align="center">
         <label for="Galeria"><b> Galeria:</b></label>
-        <img src="https://via.placeholder.com/150" width="50%" height="150" />
+
+        <div align="center" class="ui-body ui-body-a ui-corner-all">
+          <div class="ui-nodisc-icon ui-alt-icon">
+            <img
+              src="https://via.placeholder.com/150"
+              width="100%"
+              height="150"
+            />
+          </div>
+        </div>
 
         <a href="#informacion" class="ui-btn ui-corner-all">VOLVER</a>
       </div>
@@ -282,7 +315,7 @@
           <div class="ui-nodisc-icon ui-alt-icon">
             <!-- Classes added to the wrapper -->
             <a
-              href="#Galeria"
+              href="#"
               class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"
               >User</a
             ><br />
