@@ -29,7 +29,7 @@
     <div data-role="page" id="iniciar-sesion">
       <div role="main" class="ui-content">
         <div align="center">
-          <img src="https://via.placeholder.com/300" />
+          <img src="https://via.placeholder.com/200" />
         </div>
         <label for="correo">Correo:</label>
         <input
@@ -58,8 +58,9 @@
     <!-- /page -->
 
     <div data-role="page" id="registro">
+      <br />
       <div align="center">
-        <img src="https://via.placeholder.com/150" />
+        <img src="https://via.placeholder.com/200" />
       </div>
       <div role="main" class="ui-content">
         <label for="correo">Correo:</label>
@@ -99,7 +100,7 @@
       <div data-role="header" data-position="fixed">
         <div class="ui-grid-b">
           <div align="left" class="ui-block-a">
-            <img src="https://via.placeholder.com/40" />
+            <img src="https://via.placeholder.com/50" />
           </div>
           <div class="ui-block-b">
             <input
@@ -112,10 +113,9 @@
           </div>
           <div class="ui-block-c">
             <a
-              href="#"
+              href="menu"
               class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-bars ui-btn-icon-notext"
-              >Options</a
-            >
+            ></a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15907.495052648595!2d-74.07401603022463!3d4.616599050000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1589204483290!5m2!1ses!2sco"
           width="100%"
-          height="500"
+          height="400"
           frameborder="0"
           style="border:0;"
           allowfullscreen=""
@@ -142,6 +142,83 @@
     <!-- /page -->
 
     <div data-role="page" id="informacion">
+      <div
+        data-role="panel"
+        id="menu"
+        data-display="overlay"
+        data-position="right"
+      >
+        <img src="https://via.placeholder.com/230x50" width="230" height="50" />
+        <hr />
+        <ul data-role="listview" data-inset="true">
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Perfil</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Favoritos</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Historial</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Bonos</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Configuración</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Ayuda</a
+            >
+          </li>
+          <hr />
+          <li>
+            <a href="#principal"
+              ><img
+                src="https://via.placeholder.com/60"
+                alt=""
+                class="ui-li-icon ui-corner-none"
+              />Cerrar sesión</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- /panel -->
+
       <div data-role="header" data-position="fixed">
         <div align="left" class="ui-block-a">
           <a href="#inicio">
@@ -152,8 +229,7 @@
           <a
             href="#menu"
             class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
-            >Phone</a
-          >
+          ></a>
         </div>
       </div>
       <!-- /header -->
@@ -163,52 +239,69 @@
         <div align="center">
           <img src="https://via.placeholder.com/150" width="70%" height="200" />
         </div>
-      </div>
+        <p align="center">
+          <b>Santa Ana</b><br />
+          <b>5:00 a.m - 10:00 p.m</b><br />
+        </p>
+        <br />
+        <label for="Comentarios"><b>Comentarios:</b></label>
 
-      <p align="center">
-        <b>Santa Ana</b><br />
-        <b>5:00 a.m - 10:00 p.m</b><br />
-      </p>
-      <br />
-      <label for="Comentarios"><b>Comentarios:</b></label>
-
-      <div class="ui-grid-a">
-        <div class="ui-block-a">
-          <div class="ui-bar ui-bar-a" style="height:200px">
-            <ul data-role="listview" data-inset="true">
-              <li>
-                <img src="https://via.placeholder.com/50" />
-                <h2>Usuario</h2>
-                <p>Comentario</p>
-              </li>
-              <li>
-                <img src="https://via.placeholder.com/50" />
-                <h2>Usuario</h2>
-                <p>Comentario</p>
-              </li>
-            </ul>
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <div class="ui-bar ui-bar-a" style="height:260px">
+              <ul data-role="listview" data-inset="true">
+                <li>
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt=""
+                    class="ui-li-icon ui-corner-none"
+                  />
+                  <h1>Usuario</h1>
+                  <p>Comentario</p>
+                </li>
+                <li>
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt=""
+                    class="ui-li-icon ui-corner-none"
+                  />
+                  <h1>Usuario</h1>
+                  <p>Comentario</p>
+                </li>
+                <li>
+                  <img
+                    src="https://via.placeholder.com/50"
+                    alt=""
+                    class="ui-li-icon ui-corner-none"
+                  />
+                  <h1>Usuario</h1>
+                  <p>Comentario</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="ui-block-b" align="center">
+            <div class="ui-bar ui-bar-a" style="height:260px">
+              <a
+                href="#galeria"
+                style="width:100px"
+                class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-top"
+                >Galeria</a
+              >
+              <a
+                href="#información-de-contacto"
+                style="width:100px"
+                class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-top"
+                >Información <br />de contacto</a
+              >
+            </div>
           </div>
         </div>
-        <div align="center" class="ui-block-b">
-          <div class="ui-bar ui-bar-a" style="height:200px">
-            <a
-              href="#galeria"
-              style="width:100px"
-              class="ui-btn ui-btn-inline ui-icon-grid ui-btn-icon-top"
-              >Galeria</a
-            >
-            <a
-              href="#información-de-contacto"
-              style="width:100px"
-              class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-top"
-              >Información <br />de contacto</a
-            >
-          </div>
-        </div>
-      </div>
-      <!-- /grid-a -->
+        <!-- /grid-a -->
 
-      <a href="#Reserva" class="ui-btn ui-corner-all">RESERVAR</a>
+        <a href="#Reserva" class="ui-btn ui-corner-all">RESERVAR</a>
+      </div>
+      <!-- /content -->
     </div>
     <!-- /page -->
 
@@ -234,16 +327,25 @@
         <div align="center">
           <img src="https://via.placeholder.com/150" width="70%" height="200" />
         </div>
-      </div>
 
-      <p align="center">
-        <b>Santa Ana</b><br />
-        <b>5:00 a.m - 10:00 p.m</b><br />
-      </p>
-      <br />
-      <div align="center">
-        <label for="Galeria"><b> Galeria:</b></label>
-        <img src="https://via.placeholder.com/150" width="50%" height="150" />
+        <p align="center">
+          <b>Santa Ana</b><br />
+          <b>5:00 a.m - 10:00 p.m</b><br />
+        </p>
+        <br />
+        <div align="left">
+          <label for="Galeria"><b> Galeria:</b></label>
+
+          <div align="center" class="ui-body ui-body-a ui-corner-all">
+            <div class="ui-nodisc-icon ui-alt-icon">
+              <img
+                src="https://via.placeholder.com/150"
+                width="90%"
+                height="150"
+              />
+            </div>
+          </div>
+        </div>
 
         <a href="#informacion" class="ui-btn ui-corner-all">VOLVER</a>
       </div>
@@ -252,23 +354,28 @@
     <!-- /page -->
 
     <div data-role="page" id="información-de-contacto">
-      <div role="main" class="ui-content">
-        <a
-          href="#informacion"
-          class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all"
-          >No text</a
-        >
-        <a
-          href="#Inicio"
-          class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all"
-          >Home</a
-        >
-
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-          <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-          <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+      <div data-role="header" data-position="fixed">
+        <div align="left" class="ui-block-a">
+          <a href="#inicio">
+            <img src="https://via.placeholder.com/50" />
+          </a>
         </div>
+        <div class="ui-nodisc-icon ui-alt-icon">
+          <a
+            href="#menu"
+            class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+            >Phone</a
+          >
+        </div>
+      </div>
+      <!-- /header -->
+      <br />
 
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/150" width="70%" height="200" />
+        </div>
+        <br />
         <p align="center">
           <b>Santa Ana</b><br />
           <b>5:00 a.m - 10:00 p.m</b><br />
@@ -282,7 +389,7 @@
           <div class="ui-nodisc-icon ui-alt-icon">
             <!-- Classes added to the wrapper -->
             <a
-              href="#Galeria"
+              href="#"
               class="ui-btn ui-shadow ui-corner-all ui-icon-user ui-btn-icon-notext ui-btn-inline"
               >User</a
             ><br />
@@ -329,28 +436,32 @@
 
         <a href="#informacion" class="ui-btn ui-corner-all">VOLVER</a>
       </div>
-      <!-- /content -->
+      <!-- Content -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="Reserva">
-      <div role="main" class="ui-content">
-        <a
-          href="#Información"
-          class="ui-btn-right ui-icon-bars ui-btn-icon-notext ui-corner-all"
-          >No text</a
-        >
-        <a
-          href="#Inicio"
-          class="ui-btn-left ui-icon-home ui-btn-icon-notext ui-corner-all"
-          >Home</a
-        >
-
-        <div align="center" data-role="controlgroup" data-type="horizontal">
-          <a href="#" class="ui-btn ui-corner-all">10 cupos</a>
-          <a href="#" class="ui-btn ui-corner-all">43 x Minuto</a>
+      <div data-role="header" data-position="fixed">
+        <div align="left" class="ui-block-a">
+          <a href="#inicio">
+            <img src="https://via.placeholder.com/50" />
+          </a>
         </div>
-
+        <div class="ui-nodisc-icon ui-alt-icon">
+          <a
+            href="#menu"
+            class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+            >Phone</a
+          >
+        </div>
+      </div>
+      <!-- /header -->
+      <br />
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/150" width="70%" height="200" />
+        </div>
+        <br />
         <p align="center">
           <b>Santa Ana</b><br />
           <b>5:00 a.m - 10:00 p.m</b><br />
@@ -381,7 +492,148 @@
           />
         </form>
 
-        <a href="#" class="ui-btn ui-corner-all">CONFIRMAR</a>
+        <a
+          href="#confirmacion"
+          data-rel="popup"
+          data-position-to="window"
+          data-transition="pop"
+          class="ui-btn ui-corner-all"
+          >CONFIRMAR</a
+        >
+        <div
+          data-role="popup"
+          id="confirmacion"
+          data-overlay-theme="b"
+          data-theme="b"
+          data-dismissible="false"
+          style="max-width:400px;"
+        >
+          <div data-role="header" data-theme="a">
+            <h1>Confirmación</h1>
+          </div>
+          <div role="main" class="ui-content">
+            <h3 align="center" class="ui-title">
+              Gracias por elegirnos, <br />
+              ¿llegaste a tu parqueadero?
+            </h3>
+            <div align="center">
+              <a
+                href="#si"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+                data-transition="flow"
+                >Si</a
+              >
+              <a
+                href="#no"
+                class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b"
+                data-transition="flow"
+                >No</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="si">
+      <div role="main" class="ui-content">
+        <div align="center" class="ui-body ui-body-a ui-corner-all">
+          <form>
+            <fieldset data-role="controlgroup">
+              <legend align="center"><b>Destaca:</b></legend>
+              <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" />
+              <label for="checkbox-v-2a">Fotografías falsas</label>
+              <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" />
+              <label for="checkbox-v-2b">Precios diferentes</label>
+              <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c" />
+              <label for="checkbox-v-2c">Ubicación incorrecta</label>
+              <input type="checkbox" name="checkbox-v-2d" id="checkbox-v-2d" />
+              <label for="checkbox-v-2d">Horarios incorrectos</label>
+            </fieldset>
+          </form>
+
+          <a href="#pagina-final" class="ui-btn ui-corner-all">OK</a>
+        </div>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="no">
+      <div role="main" class="ui-content">
+        <div align="center" class="ui-body ui-body-a ui-corner-all">
+          <form>
+            <fieldset data-role="controlgroup">
+              <legend align="center"><b>Motivos:</b></legend>
+              <input type="checkbox" name="checkbox-v-3a" id="checkbox-v-3a" />
+              <label for="checkbox-v-3a">Fotografías falsas</label>
+              <input type="checkbox" name="checkbox-v-3b" id="checkbox-v-3b" />
+              <label for="checkbox-v-3b">Precios diferentes</label>
+              <input type="checkbox" name="checkbox-v-3c" id="checkbox-v-3c" />
+              <label for="checkbox-v-3c">Ubicación incorrecta</label>
+              <input type="checkbox" name="checkbox-v-3d" id="checkbox-v-3d" />
+              <label for="checkbox-v-3d">Horarios incorrectos</label>
+            </fieldset>
+          </form>
+          <a href="#pagina-final" class="ui-btn ui-corner-all">OK</a>
+        </div>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="pagina-final">
+      <div data-role="header" data-position="fixed">
+        <div align="left" class="ui-block-a">
+          <a href="#inicio">
+            <img src="https://via.placeholder.com/50" />
+          </a>
+        </div>
+        <div class="ui-nodisc-icon ui-alt-icon">
+          <a
+            href="#menu"
+            class="ui-btn-right ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"
+            >Phone</a
+          >
+        </div>
+      </div>
+      <!-- /header -->
+      <br />
+      <div role="main" class="ui-content">
+        <div align="center">
+          <img src="https://via.placeholder.com/150" width="70%" height="200" />
+        </div>
+        <br />
+        <button class="ui-btn ui-mini">Redime Bono</button><br />
+        <div align="center">
+          <img src="https://via.placeholder.com/50" />
+          <p align="center">
+            <b>Nicolle Paz</b>
+          </p>
+        </div>
+        <form>
+          <label align="center" for="slider-2"
+            ><b>Califica tu parqueadero</b></label
+          >
+          <input
+            type="range"
+            name="slider-2"
+            id="slider-2"
+            data-highlight="true"
+            min="0"
+            max="5"
+            value="5"
+          />
+        </form>
+        <div class="ui-field-contain">
+          <label for="textarea-1"></label>
+          <textarea cols="100" rows="8" name="textarea-1" id="textarea-1">
+Escribe un comentario</textarea
+          >
+        </div>
+        <a href="#inicio" class="ui-btn ui-corner-all">FINALIZAR</a>
       </div>
       <!-- /content -->
     </div>
